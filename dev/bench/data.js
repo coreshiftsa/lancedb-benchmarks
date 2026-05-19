@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1779230670944,
+  "lastUpdate": 1779231119891,
   "repoUrl": "https://github.com/CoreShiftCompany/lancedb",
   "entries": {
     "Rust Large Benchmarks": [
@@ -138,6 +138,88 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00153592413344745",
             "extra": "mean: 27.452180839609355 msec\nrounds: 5"
+          }
+        ]
+      }
+    ],
+    "Rust Foundational Benchmarks": [
+      {
+        "commit": {
+          "author": {
+            "name": "CoreShiftCompany",
+            "username": "CoreShiftCompany"
+          },
+          "committer": {
+            "name": "CoreShiftCompany",
+            "username": "CoreShiftCompany"
+          },
+          "id": "0fca8c7911a649391cfda6db8ad6a88c8e5e2fc1",
+          "message": "feat: Add foundational vector search and ingestion benchmarks",
+          "timestamp": "2026-05-17T05:43:25Z",
+          "url": "https://github.com/CoreShiftCompany/lancedb/pull/19/commits/0fca8c7911a649391cfda6db8ad6a88c8e5e2fc1"
+        },
+        "date": 1779231119081,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "Vector Ingestion/insert_10k_vectors_128d",
+            "value": 17301262,
+            "range": "± 2556845",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Vector Ingestion/insert_10k_streaming_1k_batches_128d",
+            "value": 44652414,
+            "range": "± 3210045",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Vector Ingestion/concurrent_writes_10_writers_1k_vectors_128d",
+            "value": 25796085,
+            "range": "± 4986910",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Vector End-to-End/streaming_read_write_1k_batches_128d",
+            "value": 23812301,
+            "range": "± 4885873",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Vector Search/knn_search_10k_vectors_128d_k10",
+            "value": 3407173,
+            "range": "± 194999",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Vector Search/knn_search_10k_vectors_128d_k10_filtered",
+            "value": 3458009,
+            "range": "± 132718",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Vector Search/knn_search_10k_vectors_128d_k10_concurrent_10",
+            "value": 11242498,
+            "range": "± 338640",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Vector Search/hybrid_search_10k_vectors_128d_k10",
+            "value": 4162871,
+            "range": "± 124460",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Vector Indexing/build_ivf_pq_index_10k_vectors_128d",
+            "value": 288998807,
+            "range": "± 75678918",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Vector End-to-End/rag_workload_1k_vectors_128d_hybrid_k5",
+            "value": 1282039,
+            "range": "± 74869",
+            "unit": "ns/iter"
           }
         ]
       }
