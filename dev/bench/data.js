@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1779278736924,
+  "lastUpdate": 1779278974154,
   "repoUrl": "https://github.com/CoreShiftCompany/lancedb",
   "entries": {
     "Rust Large Benchmarks": [
@@ -1090,6 +1090,110 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00025785141875836346",
             "extra": "mean: 27.212580796331167 msec\nrounds: 5"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "CoreShiftCompany",
+            "username": "CoreShiftCompany"
+          },
+          "committer": {
+            "name": "CoreShiftCompany",
+            "username": "CoreShiftCompany"
+          },
+          "id": "5fb2915794c0183186c53f13ba483fa0864fa74d",
+          "message": "feat: Add foundational vector search and ingestion benchmarks",
+          "timestamp": "2026-05-20T08:39:09Z",
+          "url": "https://github.com/CoreShiftCompany/lancedb/pull/19/commits/5fb2915794c0183186c53f13ba483fa0864fa74d"
+        },
+        "date": 1779278973226,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "tests/benchmarks/test_large_dataset_bench.py::test_benchmark_large_index_build",
+            "value": 0.1965894424036699,
+            "unit": "iter/sec",
+            "range": "stddev: 0.10476703868751724",
+            "extra": "mean: 5.086743152496638 sec\nrounds: 2"
+          },
+          {
+            "name": "tests/benchmarks/test_large_dataset_bench.py::test_benchmark_large_dataset_recall_and_latency",
+            "value": 2.518107326451472,
+            "unit": "iter/sec",
+            "range": "stddev: 0.010187754735883525",
+            "extra": "mean: 397.12366089224815 msec\nrounds: 3"
+          },
+          {
+            "name": "tests/benchmarks/test_vector_search_bench.py::test_benchmark_ingestion",
+            "value": 26.364531883842833,
+            "unit": "iter/sec",
+            "range": "stddev: 0.004800813624410196",
+            "extra": "mean: 37.92974608484656 msec\nrounds: 5"
+          },
+          {
+            "name": "tests/benchmarks/test_vector_search_bench.py::test_benchmark_streaming_ingestion",
+            "value": 13.710785511296251,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0033312301246230004",
+            "extra": "mean: 72.93528143782169 msec\nrounds: 5"
+          },
+          {
+            "name": "tests/benchmarks/test_vector_search_bench.py::test_benchmark_concurrent_writes",
+            "value": 26.840194672150695,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0014993483642792766",
+            "extra": "mean: 37.25755391176789 msec\nrounds: 5"
+          },
+          {
+            "name": "tests/benchmarks/test_vector_search_bench.py::test_benchmark_streaming_read_write",
+            "value": 10.386718631255414,
+            "unit": "iter/sec",
+            "range": "stddev: 0.002571626163037652",
+            "extra": "mean: 96.27679688856006 msec\nrounds: 3"
+          },
+          {
+            "name": "tests/benchmarks/test_vector_search_bench.py::test_benchmark_index_build",
+            "value": 6.523615544596605,
+            "unit": "iter/sec",
+            "range": "stddev: 0.011048585568729298",
+            "extra": "mean: 153.28922944091676 msec\nrounds: 3"
+          },
+          {
+            "name": "tests/benchmarks/test_vector_search_bench.py::test_benchmark_knn_search",
+            "value": 177.2832054644537,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0004900043128089489",
+            "extra": "mean: 5.640692232409492 msec\nrounds: 10"
+          },
+          {
+            "name": "tests/benchmarks/test_vector_search_bench.py::test_benchmark_knn_search_filtered",
+            "value": 178.9724581974805,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00024271028511871177",
+            "extra": "mean: 5.587451891042292 msec\nrounds: 10"
+          },
+          {
+            "name": "tests/benchmarks/test_vector_search_bench.py::test_benchmark_rag_workload",
+            "value": 140.68457267466113,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0002486974683149689",
+            "extra": "mean: 7.108099921606481 msec\nrounds: 10"
+          },
+          {
+            "name": "tests/benchmarks/test_vector_search_bench.py::test_benchmark_hybrid_search",
+            "value": 141.46766399377788,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0002370742122746694",
+            "extra": "mean: 7.068753181956709 msec\nrounds: 10"
+          },
+          {
+            "name": "tests/benchmarks/test_vector_search_bench.py::test_benchmark_knn_search_concurrent",
+            "value": 36.483732368789276,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0006737051425695816",
+            "extra": "mean: 27.40947636310011 msec\nrounds: 5"
           }
         ]
       }
