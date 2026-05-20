@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1779273744847,
+  "lastUpdate": 1779274347666,
   "repoUrl": "https://github.com/CoreShiftCompany/lancedb",
   "entries": {
     "Rust Large Benchmarks": [
@@ -1688,6 +1688,40 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.014630095516121773",
             "extra": "mean: 401.9836696744379 msec\nrounds: 3"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "CoreShiftCompany",
+            "username": "CoreShiftCompany"
+          },
+          "committer": {
+            "name": "CoreShiftCompany",
+            "username": "CoreShiftCompany"
+          },
+          "id": "df279f29ede4b93b4dd3d0d8fab8831d71e19cc9",
+          "message": "feat: Add foundational vector search and ingestion benchmarks",
+          "timestamp": "2026-05-20T08:39:09Z",
+          "url": "https://github.com/CoreShiftCompany/lancedb/pull/19/commits/df279f29ede4b93b4dd3d0d8fab8831d71e19cc9"
+        },
+        "date": 1779274346746,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "tests/benchmarks/test_large_dataset_bench.py::test_benchmark_large_index_build",
+            "value": 0.04895592176182453,
+            "unit": "iter/sec",
+            "range": "stddev: 0.7016790008815624",
+            "extra": "mean: 20.426538077765144 sec\nrounds: 2"
+          },
+          {
+            "name": "tests/benchmarks/test_large_dataset_bench.py::test_benchmark_large_dataset_recall_and_latency",
+            "value": 1.9167515132238182,
+            "unit": "iter/sec",
+            "range": "stddev: 0.07112667560018693",
+            "extra": "mean: 521.7160352298783 msec\nrounds: 3"
           }
         ]
       }
