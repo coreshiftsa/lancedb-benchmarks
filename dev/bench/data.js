@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1779244514718,
+  "lastUpdate": 1779249337039,
   "repoUrl": "https://github.com/CoreShiftCompany/lancedb",
   "entries": {
     "Rust Large Benchmarks": [
@@ -127,6 +127,38 @@ window.BENCHMARK_DATA = {
             "name": "Large Vector Search/knn_search_100k_vectors_128d_k10",
             "value": 1993063,
             "range": "± 152861",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "CoreShiftCompany",
+            "username": "CoreShiftCompany"
+          },
+          "committer": {
+            "name": "CoreShiftCompany",
+            "username": "CoreShiftCompany"
+          },
+          "id": "8e9a2bf73747defb3947aed0958a5d42e94fd0b4",
+          "message": "feat: Add foundational vector search and ingestion benchmarks",
+          "timestamp": "2026-05-17T05:43:25Z",
+          "url": "https://github.com/CoreShiftCompany/lancedb/pull/19/commits/8e9a2bf73747defb3947aed0958a5d42e94fd0b4"
+        },
+        "date": 1779249336114,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "Large Vector Indexing/build_ivf_pq_index_100k_vectors_128d",
+            "value": 2886056793,
+            "range": "± 125881685",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Large Vector Search/knn_search_100k_vectors_128d_k10",
+            "value": 3346190,
+            "range": "± 183297",
             "unit": "ns/iter"
           }
         ]
